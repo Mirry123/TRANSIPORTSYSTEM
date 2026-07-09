@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Transport System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    background:#f5f7fb;
+}
+
+
+/* Navigation */
+
+header{
+
+    background:#003566;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+
+}
+
+
+nav a:hover{
+
+    color:#ffd60a;
+
+}
+
+
+/* Hero Section */
+
+
+.hero{
+
+height:600px;
+
+background:
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+}
+
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+
+.hero p{
+
+font-size:20px;
+margin:20px;
+
+}
+
+
+.btn{
+
+background:#ffc300;
+padding:15px 35px;
+border-radius:30px;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+
+.btn:hover{
+
+background:white;
+
+}
+
+
+
+/* About */
+
+
+.about{
+
+padding:60px 10%;
+text-align:center;
+
+}
+
+
+.about h2{
+
+color:#003566;
+font-size:35px;
+
+}
+
+
+/* Cards */
+
+
+.services{
+
+padding:40px 8%;
+
+}
+
+
+.services h2{
+
+text-align:center;
+color:#003566;
+font-size:35px;
+
+}
+
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+
+}
+
+
+.card{
+
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:.3s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.card img{
+
+width:100%;
+height:200px;
+object-fit:cover;
+
+}
+
+
+
+.card h3{
+
+padding:15px;
+color:#003566;
+
+}
+
+
+.card p{
+
+padding:0 15px 20px;
+color:#555;
+
+}
+
+
+/* Footer */
+
+
+footer{
+
+background:#001d3d;
+color:white;
+padding:20px;
+text-align:center;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+🚍 Smart Transport
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="services.html">Services</a>
+
+<a href="booking.html">Booking</a>
+
+<a href="login.html">Login</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>Travel Smart, Travel Safe</h1>
+
+<p>
+Modern transportation system connecting people everywhere
+</p>
+
+
+<a class="btn" onclick="booking()">Book Now</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="about">
+
+<h2>Welcome To Our Transport System</h2>
+
+<br>
+
+<p>
+We provide reliable bus transport, online booking,
+vehicle tracking and safe journeys at affordable prices.
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="services">
+
+
+<h2>Our Main Services</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e">
+
+<h3>Bus Transport</h3>
+
+<p>
+Comfortable buses with professional drivers.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205">
+
+<h3>Online Booking</h3>
+
+<p>
+Book your seat anywhere anytime.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624">
+
+<h3>Vehicle Tracking</h3>
+
+<p>
+Know your vehicle location easily.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d3">
+
+<h3>Cargo Transport</h3>
+
+<p>
+Safe transportation of goods.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Smart Transport System | All Rights Reserved
+</p>
+
+</footer>
+
+
+
+
+<script>
+
+
+function booking(){
+
+alert("Welcome to Online Booking System");
+
+window.location.href="booking.php";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
